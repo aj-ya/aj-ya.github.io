@@ -1,0 +1,17 @@
+.big-text{
+    font-size: 3em;
+    font-weight: bolder;
+    margin: 0px auto 20px auto;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 2s;
+}
+.img-div{
+    width: 320px;
+    height: 455px;
+    display: block;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

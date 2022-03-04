@@ -1,0 +1,42 @@
+html,
+body {
+  height: 100vh;
+}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'fira code', 'monospace';
+}
+html{
+    --bg: #a3e4db;
+    --bg2: #fed1ef;
+    --txt2: #1c6dd0;
+    --txt:#000000;
+}
+html[data-theme='dark'] {
+  --bg: #0a090b;
+  --bg2: #00e6c4;
+  --txt: #fff8f3;
+  --txt2: #000000;
+}
+.nav {
+    flex: 0 1 auto;
+    display: inline-flex;
+    font-weight: bolder;
+    font-size: 1rem;
+    padding: 5px;
+    color: var(--txt2);
+    width: 100vw;
+    background: var(--bg2);
+  }
+  .intro {
+    .greenpref {
+      color: forestgreen;
+    }
+  }
+  .Typewriter {
+    display: inline;
+  }
+  .switch-end {
+    margin: auto 10px auto auto;
+  }

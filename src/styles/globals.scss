@@ -1,0 +1,97 @@
+$dark-primary-bg: #0a090b;
+$dark-txt1: #fff8f3;
+$dark-txt2: #a977f1;
+$dark-sec-bg: #00e6c4;
+$light-primary-bg: #a3e4db;
+$light-txt1: #1c6dd0;
+$light-sec-bg: #fed1ef;
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'fira code', 'monospace';
+}
+html,
+body {
+  height: 100vh;
+}
+html{
+    --bg: #a3e4db;
+    --bg2: #fed1ef;
+    --txt2: #1c6dd0;
+    --txt:#000000;
+}
+html[data-theme='dark'] {
+  --bg: #0a090b;
+  --bg2: #00e6c4;
+  --txt: #fff8f3;
+  --txt2: #000000;
+}
+.container {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  background: var(--bg);
+}
+.mainBody {
+  color: var(--txt);
+  flex: 1 1 auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer {
+  flex: 0 1 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .socials{
+    .link-icon{
+      margin:auto 20px;
+      display: inline;
+    }
+  }
+}
+
+.nav {
+  flex: 0 1 auto;
+  display: inline-flex;
+  font-weight: bolder;
+  color: var(--txt2);
+  width: 100vw;
+  background: var(--bg2);
+  border-radius: 0px 0px 10px 10px;
+}
+.intro {
+  margin: auto 10px;
+  .greenpref {
+    color: forestgreen;
+  }
+}
+.Typewriter {
+  display: inline;
+}
+.switch-end {
+  margin: auto 10px auto auto;
+}
+.subdom{
+  margin: auto 10px auto 10px ;
+}
+.no-underline{
+  text-decoration: none;
+  color: var(--txt2);
+}
+@media only screen and (orientation:portrait) {
+    .intro{
+      display: none;
+    }
+  /* For portrait layouts only */
+}
+
+@media only screen and (orientation:landscape) {
+  /* For landscape layouts only */
+  .nav{
+    font-size: 1.5rem;
+  }
+}
