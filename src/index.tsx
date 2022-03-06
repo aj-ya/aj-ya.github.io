@@ -12,11 +12,11 @@ ReactDOM.render(
   <React.StrictMode>
     <div className="container">
       <Nav />
-      <BrowserRouter>
+      <BrowserRouter basename="/">
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="Blog" element={<Blog />} />
-          <Route path="Home" element={<App />} />
+          <Route path="/Blog" element={<Blog />} />
+          <Route path="/Home" element={<App />} />
         </Routes>
       </BrowserRouter>
       <Footer />
