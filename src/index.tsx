@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles/index.css";
-import App from "./components/App";
+import App from "./pages/App";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Blog from "./components/Blog";
+import Blog from "./pages/Blog";
+import NotFound from "./pages/404";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -16,7 +17,7 @@ ReactDOM.render(
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/Blog" element={<Blog />} />
-          <Route path="/Home" element={<App />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
       <Footer />

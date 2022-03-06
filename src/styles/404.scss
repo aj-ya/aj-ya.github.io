@@ -1,0 +1,13 @@
+.mainBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background:  url("../assets/looking-around.gif") center no-repeat;
+  .heading {
+    font-size: 10em;
+    font-weight: bolder;
+    color: var(--txt);
+    opacity: 90%;
+  }
+}
